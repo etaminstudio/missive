@@ -1,0 +1,4 @@
+# Node version is read from .node-version
+[build]
+  command = "npm run docs:build"
+  publish = "docs/.vitepress/dist"
