@@ -2,6 +2,8 @@
 
 A lightweight Rails toolkit for building newsletter features. Missive provides the primitives for managing newsletters and subscribers, with [Postmark](https://postmarkapp.com/) handling delivery.
 
+📖 **Documentation: [missive.etamin.studio](https://missive.etamin.studio)**
+
 ## Overview
 
 ### Features
@@ -237,8 +239,8 @@ message.send!
 
 Missive leverages the [Bulk Email API](https://postmarkapp.com/developer/api/bulk-email) endpoints.
 
-> [!WARNING]
-> This endpoint is available to early access customers only. You need to request access. [Learn more](https://postmarkapp.com/support/article/1311-the-early-access-program-for-the-new-bulk-api)
+> [!NOTE]
+> The Bulk API is available to all Postmark customers, subject to approval. To enable it on your account, contact Postmark support. [Learn more](https://postmarkapp.com/developer/api/bulk-email#send-bulk-emails)
 
 The official [postmark gem](https://github.com/ActiveCampaign/postmark-gem) does not support these endpoints yet, so Missive ships with `Stamp`, a thin layer over Postmark's official library.
 
@@ -301,4 +303,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Missive project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Spone/missive/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Missive project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/etaminstudio/missive/blob/main/CODE_OF_CONDUCT.md).
